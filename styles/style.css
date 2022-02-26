@@ -34,6 +34,7 @@
 
 .main .main-information {
   width: 50%;
+  background: red;
 }
 
 .main .main-image {
@@ -46,4 +47,17 @@
   height: 100%;
   object-fit: cover;
   object-position: right;
+}
+
+.main .main-information .logo{
+    margin: 15px 0;
+    width: 100%;
+   
+    
+    
+}
+.main .main-information .logo img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
