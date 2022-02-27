@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Arial';
 }
 
 :root {
@@ -22,6 +23,87 @@
   margin: auto 20px;
 }
 
+.menu .menu-item__button a {
+  color: white;
+}
+
+/* sidebar */
+/* .menu-list-content {
+  display: none;
+  position: relative;
+}
+
+.menu-list-content .menu-list {
+  position: absolute;
+} */
+.menu .menu-list-content {
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .6s;
+}
+
+.menu-content {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  background: white;
+  color: var(--primary-color);
+}
+
+.menu-content .menu-content__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+
+.menu-content .menu-content__title h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-content .menu-content__title a {
+  color: black;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+}
+
+.menu-content .menu-content__title a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.menu-list {
+  margin: 20px;
+  list-style: none;
+}
+
+.menu-list .menu-list__item {
+  padding: 15px;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+.menu-list .menu-list__item:last-child {
+  bottom: 5px;
+  position: absolute;
+  border: none;
+}
+
+#modalMenu:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
 .menu-item__title {
   font-size: 1.2rem;
 }
@@ -36,6 +118,10 @@
   width: 50%;
   height: 93.7vh;
   overflow: auto;
+}
+
+.main .main-information::-webkit-scrollbar {
+  display: none;
 }
 
 .main .main-information .logo {
@@ -212,6 +298,7 @@
   text-align: center;
   padding-top: 10px;
   border-top: 1px solid #1d1d1d2c;
+  font-size: .9rem;
 }
 
 .footer .footer__text {
@@ -223,7 +310,6 @@
 }
 
 .footer .footer__text--information {
-  font-size: .9rem;
   margin: 5px auto;
 }
 
@@ -236,4 +322,28 @@
 .footer .social-networks__item {
   margin: auto 5px;
   cursor: pointer;
+}
+
+/* Responsive design */
+
+@media (max-width: 1000px) {
+  .menu-content {
+    width: 40%;
+  }
+  .products-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .product-card .product-card__image {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .main .main-image {
+    display: none;
+  }
+  .main .main-information {
+    width: 100%;
+  }
 }

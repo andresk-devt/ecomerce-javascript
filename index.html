@@ -11,9 +11,38 @@
 </head>
 <body>
   <!-- Menu -->
+  <!-- <div class="menu-list-content">
+    <ul class="menu-list">
+      <li class="menu-list__item">Home</li>
+      <li class="menu-list__item">About</li>
+      <li class="menu-list__item">Contact</li>
+    </ul>
+  </div> -->
+
   <nav class="menu">
-    <div class="menu-item__button">
-      <i class="fa-solid fa-bars"></i>
+    <div class="menu-item__button" id="sidebar">
+      <a href="#modalMenu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="modalMenu" class="menu-list-content">
+      <div class="menu-content">
+        <div class="menu-content__title">
+          <h2>Menu</h2>
+          <a href="">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-list__item">Home</li>
+          <li class="menu-list__item">About</li>
+          <li class="menu-list__item">Contact</li>
+          <li class="menu-list__item">
+            <i class="fa-solid fa-circle-user"></i> Login
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="menu-item__title">
       <h1>Fancy Hank's Products</h1>
@@ -124,6 +153,9 @@
           </div>
           <div class="social-networks__item">
             <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="social-networks__item">
+            <i class="fa-brands fa-github"></i>
           </div>
         </div>
       </footer>
