@@ -26,11 +26,113 @@
   <!-- Main content -->
   <main class="main">
     <article class="main-information">
+      <div class="logo">
+        <img src="https://images.mryum.com/api/2/img/prod/b315786e-6382-4628-a619-b5577d5c3307/image-original/resize?size=1000&auth=NDI4ODAwMzkxNg__" alt="">
+      </div>
+
+      <!-- Products clasification -->
+      <div class="products-list">
+        <div class="filter-products-lits">
+          <a href="#modal">
+            <button class="selecter-category">
+              Select a product category <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </a>
+          <div id="modal" class="selecter-category__modal">
+            <div class="modal-content">
+              <div class="modal-content__title">
+                <h2>Change type of products</h2>
+                <a href="">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body__item">
+                  <p>Clothing</p> <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="modal-body__item">
+                  <p>Shoes</p> <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="modal-body__item">
+                  <p>Accessories</p> <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="modal-body__item">
+                  <p>Bags</p> <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="modal-body__item">
+                  <p>New Collection</p> <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- Products list, selecter -->
+      <div class="products-content">
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://arc-anglerfish-arc2-prod-artear.s3.amazonaws.com/public/Z5CCK4LQ44JIM6BWFUMIPN2SZI.jpg" alt="">
+          </div>
+          <p class="product-card__title">Sports</p>
+        </div>
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2021/11/tendencias-en-electrodomesticos-2022-betnoire.jpg" alt="">
+          </div>
+          <p class="product-card__title">Electrodomestics</p>
+        </div>
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://www.e-mc2.gr/sites/default/files/2019-06/afashion_1000_668_80.jpg" alt="">
+          </div>
+          <p class="product-card__title">Clothing</p>
+        </div>
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/classic-accessories-1516305397.jpg" alt="">
+          </div>
+          <p class="product-card__title">Acessories</p>
+        </div>
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2021/11/tendencias-en-electrodomesticos-2022-betnoire.jpg" alt="">
+          </div>
+          <p class="product-card__title">Electrodomestics</p>
+        </div>
+        <div class="product-card" onclick="imprimir()">
+          <div class="product-card__image">
+            <img src="https://www.e-mc2.gr/sites/default/files/2019-06/afashion_1000_668_80.jpg" alt="">
+          </div>
+          <p class="product-card__title">Clothing</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">
+          <span>Developed by </span> Andres Camilo Gomez 
+        </p>
+        <p class="footer__text footer__text--information">
+          This page is made for practical purposes as a developer, it does not belong to a company. 
+        </p>
+        <div class="social-networks">
+          <div class="social-networks__item">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="social-networks__item">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social-networks__item">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+      </footer>
+
     </article>
     <article class="main-image">
       <img src="https://cdn.ntmx.me/media/2020/11/27/preview_883f64057428a4550b000255f28685fd9301b85d.jpg" alt="Imagen principal">
     </article>
   </main>
-
+  <script src="./App/index.js"></script>
 </body>
 </html>
